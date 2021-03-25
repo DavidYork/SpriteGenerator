@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Drawing;
 
 namespace SpriteGenerator
 {
@@ -12,7 +13,7 @@ namespace SpriteGenerator
 			string imageExtension = ".png"		// Case insensitive, used for input
 		)
 		{
-			var rand = new Random();
+			var rand = new System.Random();
 
 			// Enumerate all source files
 			var src = new Inputs(source, imageExtension);

@@ -30,6 +30,8 @@ namespace SpriteGenerator
 			DirectoryInfo outputDir = new DirectoryInfo("../../Dudes/");
 			FileInfo paletteFile = new FileInfo(Path.Combine(inputDir.FullName, "colors.png"));
 
+			outputDir.Create();
+
 			int padding = 3;
 			int spritesWide = 12;
 			int spritesHigh = 8;
